@@ -1,6 +1,6 @@
 # City Scrapers Events
 
-React app created with [create-react-app](https://github.com/facebook/create-react-app) for displaying scraped events from the [City Scrapers project](https://github.com/City-Bureau/city-scrapers.git).
+React app created with [create-react-app](https://github.com/facebook/create-react-app) for displaying scraped events from the [City Scrapers project](http://city-scrapers-pittsburgh.github.io/city-scrapers-events.git).
 
 ## Setup
 
