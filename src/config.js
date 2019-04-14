@@ -3,13 +3,10 @@ const years = [currentYear - 1, currentYear, currentYear + 1];
 
 const config = {
   EVENT_SOURCE:
-    "https://cityscrapers.blob.core.windows.net/meetings-feed/upcoming.json",
+    "https://s3.amazonaws.com/city-scrapers-pitt/upcoming.json",
   REGION_OPTIONS: [
-    { label: "Chicago", value: "chi" },
-    { label: "Cook County", value: "cook" },
-    { label: "Illinois", value: "il" },
-    { label: "Detroit", value: "det" },
-    { label: "Wayne County", value: "wayne" }
+    { label: "Pittsburgh", value: "pitt" },
+    { label: "Allegheny County", value: "alle" },
   ],
   MONTH_OPTIONS: [
     { label: "January", value: 0 },
