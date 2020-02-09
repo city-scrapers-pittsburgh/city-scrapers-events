@@ -2,7 +2,7 @@
   "name": "city-scrapers-events",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "http://city-scrapers-pittsburgh.github.io/city-scrapers-events",
+  "homepage": "https://pgh-public-meetings.github.io/events/",
   "dependencies": {
     "moment": "^2.22.1",
     "moment-timezone": "^0.5.16",
