@@ -1,0 +1,25 @@
+name: Cron Build
+
+on: 
+  schedule:
+    - cron: "12 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  scan:
+    name: npm audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependencies
+        run: npm ci
+      - uses: oke-py/npm-audit-action@v1.5.2
+        with:
+          audit_level: moderate
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          issue_assignees: oke-py
+          issue_labels: vulnerability, automated issue
+          dedupe_issues: true
