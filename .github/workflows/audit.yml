@@ -11,15 +11,14 @@ on:
 
 jobs:
   scan:
+    name: npm audit
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: install dependencies
         run: npm ci
-      - uses: oke-py/npm-audit-action@v1.5.2
+      - uses: oke-py/npm-audit-action@v1.5.1
         with:
-          audit_level: moderate
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          issue_assignees: oke-py
-          issue_labels: vulnerability, automated issue
+          issue_labels: vulnerability
           dedupe_issues: true
